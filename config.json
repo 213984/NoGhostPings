@@ -1,0 +1,28 @@
+{
+    "logs": {
+        "normalPings": {
+            "console": true,
+            "file": {
+                "enabled": false,
+                "path": false
+            }
+        },
+        "ghostPings": {
+            "messageUpdate": {
+                "console": true,
+                "file": {
+                    "enabled": false,
+                    "path": false
+                }
+            },
+            "messageDelete": {
+                "console": true,
+                "file": {
+                    "enabled": true,
+                    "path": "./messageDeletePings.txt"
+                }
+            }
+        }
+    },
+    "token":"app-token"
+}
