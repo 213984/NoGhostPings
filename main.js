@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
+const token = "YOUR TOKEN HERE";
 const logs = {
     "normalPings": {
         "console": true,
@@ -61,4 +62,4 @@ client.on("messageUpdate", (oldmsg, newmsg) => {
     }
 });
 
-client.login("Mzk3MTc3NDcxMTMwNDAyODI3.DSwnDw._MeASy49QboNWilCkPNKHCqrNhY");
+client.login(token);
