@@ -24,11 +24,11 @@ module.exports = class {
     }
     fileLogPing() {
         if (this.pingType.dest === "User" && this.pingType.eventType === "message") {
-            this.fs.appendFileSync(this.path, `[${this.date}] New ping arrived. Content: ${this.message.content + (this.message.attachments.first() ? ` | Attachment URL: ${this.message.attachments.first().url}\n` : "\n")}`);
+            this.fs.appendFileSync(this.path, `[${this.date}] New ping arrived. Content: ${this.message.content + (this.message.attachments.first() ? ` | Attachment URL: ${this.message.attachments.first().url}\n` : "\n")}`, this.callback());
         } else if (this.pingType.dest === "User" && this.pingType.eventType === "messageDelete") {
-            this.fs.appendFileSync(this.path, `[${this.date}] GHOSTPING! Content: ${this.message.content + (this.message.attachments.first() ? ` | Attachment URL: ${this.message.attachments.first().url}\n` : "\n")}`);
+            this.fs.appendFileSync(this.path, `[${this.date}] GHOSTPING! Content: ${this.message.content + (this.message.attachments.first() ? ` | Attachment URL: ${this.message.attachments.first().url}\n` : "\n")}`, this.callback());
         } else if (this.pingType.dest === "User" && this.pingType.eventType === "messageUpdate") {
-            this.fs.appendFileSync(this.path, `[${this.date}] Ghostping. Content: ${this.message.content + (this.message.attachments.first() ? ` | Attachment URL: ${this.message.attachments.first().url}\n` : "\n")}`);
+            this.fs.appendFileSync(this.path, `[${this.date}] Ghostping. Content: ${this.message.content + (this.message.attachments.first() ? ` | Attachment URL: ${this.message.attachments.first().url}\n` : "\n")}`, this.callback());
         }
     }
 }
