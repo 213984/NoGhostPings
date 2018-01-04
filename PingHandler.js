@@ -5,6 +5,7 @@ module.exports = class {
         this.fs = fs;
         this.path = path;
         this.message = message;
+        this.callback = function(error) { error ? console.log(error) : null }
     }
     set type(value) {
         this.pingType = value;
