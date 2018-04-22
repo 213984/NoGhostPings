@@ -1,6 +1,6 @@
 # NoGhostPings
 
-### I will no longer write code for this project. Pull Requests can still get merged.
+### I will no longer write code for this project.
 
 ---------
 
